@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import uuid from 'uuid';
+import Form from './components/Form';
 import TeamList from './components/TeamList';
 
 
@@ -38,9 +39,11 @@ function App() {
   return (
     <div className="App">      
       Bloody React
+      <Form />
       <TeamList teamArray={teamState}/>
     </div>
   );
 }
+
 
 export default App;
